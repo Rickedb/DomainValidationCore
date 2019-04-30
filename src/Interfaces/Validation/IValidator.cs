@@ -1,5 +1,4 @@
-﻿
-using DomainValidationCore.Validation;
+﻿using DomainValidationCore.Validation;
 
 namespace DomainValidationCore.Interfaces.Validation
 {

@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace DomainValidationCore.Validation
 {
     public class ValidationResult
     {
         public string Message { get; set; }
-        public bool IsValid { get; private set; }
+        public bool IsValid { get => !Errors.Any(); }
         public IEnumerable<ValidationError> Errors { get; private set; }
 
         public ValidationResult()
         {
             Errors = new ValidationError[] { };
-            IsValid = true;
         }
 
         public void Add(ValidationError error)
@@ -41,7 +39,9 @@ namespace DomainValidationCore.Validation
         private void SetErrors(List<ValidationError> errors)
         {
             Errors = errors;
-            IsValid = errors.Count > 0;
+
+            if (!IsValid)
+                Message = errors[0].Message;
         }
     }
 }
