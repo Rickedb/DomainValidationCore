@@ -4,3 +4,5 @@ Domain validation project made by [Eduardo Pires](https://mvp.microsoft.com/pt-b
 Domain validation is a library that helps to validates complex business rules with specification pattern.
 
 [Eduardo Pires .Net Framework version on Nuget](https://www.nuget.org/packages/DomainValidation/)
+
+[This .Net Core version](https://www.nuget.org/packages/DomainValidationCore)
