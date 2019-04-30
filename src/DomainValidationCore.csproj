@@ -11,6 +11,9 @@ p.s.: .Net Core version from Eduardo Pires DomainValidation package.</Descriptio
     <PackageTags>C#, Specification, DDD, Pattern, Validation, Custom, Error, Messages, .NET</PackageTags>
     <Authors>Eduardo Pires, Henrique Dal Bello Batista</Authors>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
