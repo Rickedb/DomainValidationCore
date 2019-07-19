@@ -14,7 +14,7 @@ namespace DomainValidationCore.Validation
             var validation = new ValidationResult();
             foreach(var rule in _rules)
                 if (!rule.Value.Validate(entity))
-                    validation.Add(new ValidationError(rule.Value.ErrorMessage));
+                    validation.Add(new ValidationError(rule.Key, rule.Value.ErrorMessage));
 
             return validation;
         }
