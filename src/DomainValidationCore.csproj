@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>The specification Pattern is a great way to validate complex business rules in Domain.
 
@@ -11,9 +11,9 @@ p.s.: .Net Core version from Eduardo Pires DomainValidation package.</Descriptio
     <PackageTags>C#, Specification, DDD, Pattern, Validation, Custom, Error, Messages, .NET</PackageTags>
     <Authors>Eduardo Pires, Henrique Dal Bello Batista</Authors>
     <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Version>1.1.0</Version>
+    <AssemblyVersion>1.1.1.0</AssemblyVersion>
+    <FileVersion>1.1.1.0</FileVersion>
+    <Version>1.1.1</Version>
     <PackageReleaseNotes>Added rule name to ValidationError</PackageReleaseNotes>
   </PropertyGroup>
 
