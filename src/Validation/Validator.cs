@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace DomainValidationCore.Validation
 {
-    public class Validator<TEntity> : IValidator<TEntity> where TEntity : class
+    public abstract class Validator<TEntity> : IValidator<TEntity> where TEntity : class
     {
         private readonly Dictionary<string, IRule<TEntity>> _rules;
 
         public Validator() => _rules = new Dictionary<string, IRule<TEntity>>();
 
-        public ValidationResult Validate(TEntity entity)
+        public virtual ValidationResult Validate(TEntity entity)
         {
             var validation = new ValidationResult();
             foreach(var rule in _rules)
