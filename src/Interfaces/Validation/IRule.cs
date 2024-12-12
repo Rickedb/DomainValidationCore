@@ -1,9 +1,19 @@
-﻿namespace DomainValidationCore.Interfaces.Validation
+﻿using System.Threading.Tasks;
+
+namespace DomainValidationCore.Interfaces.Validation
 {
-    public interface IRule<in TEntity>
+    public interface IRule
     {
         string ErrorMessage { get; }
+    }
 
+    public interface IRule<in TEntity> : IRule
+    {
         bool Validate(TEntity entity);
+    }
+
+    public interface IAsyncRule<in TEntity> : IRule
+    {
+        Task<bool> ValidateAsync(TEntity entity);
     }
 }
